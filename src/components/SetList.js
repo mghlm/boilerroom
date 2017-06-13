@@ -12,17 +12,15 @@ class SetList extends Component {
 
   renderSets() {
     return this.state.sets.map(set =>
-      <View>
-        <Text key={set.title}></Text>
-      </View>
+      <Text>{set.title}</Text>
     );
   }
 
   render() {
     return (
-      <ScrollView>
+      <View>
         {this.renderSets()}
-      </ScrollView>
+      </View>
     );
   }
 };

@@ -12,7 +12,7 @@ function onRequest(request, response) {
     response.writeHead(200, {'Content-Type': 'application/json'});
 
     const dataObj = [{
-                        "title": "setOne",
+                        title: "setOne",
                         "length": 70
                       },
                       {
