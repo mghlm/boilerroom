@@ -7,10 +7,11 @@ const ArtistName = ( {set} ) => {
 
   return (
     <TouchableOpacity onPress={ () => Actions.setDetails( {setInfo: set} ) }>
-      {console.log(set)}
       <ArtistBox>
         <View>
-          <Text style={styles.titleTextStyle}>{set.artist.toUpperCase()}</Text>
+          <Text style={styles.titleTextStyle}>
+            {set.artist.toUpperCase()} 
+          </Text>
         </View>
       </ArtistBox>
     </TouchableOpacity>

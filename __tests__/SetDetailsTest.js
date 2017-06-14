@@ -1,14 +1,12 @@
 import 'react-native'
 import React from 'react';
-import ArtistName from '../src/components/ArtistName';
-// import { TouchableOpacity } from 'react-native'
-// import { shallow } from 'enzyme';
+import SetDetails from '../src/components/SetDetails';
 
 import renderer from 'react-test-renderer';
 
 test('renders correctly', () => {
   const tree = renderer.create(
-  <ArtistName />
+  <SetDetails />
 ).toJSON();
 expect(tree).toMatchSnapshot();
 });
