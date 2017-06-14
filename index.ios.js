@@ -3,12 +3,12 @@ import { AppRegistry, View } from 'react-native';
 import Header from './src/components/Header';
 import SetList from './src/components/SetList.js';
 
-const App = () => (
-  <View>
-    <Header />
-    <SetList />
-  </View>
-);
+// const App = () => (
+//   <View>
+//     <Header />
+//     <SetList />
+//   </View>
+// );
 
 
 
