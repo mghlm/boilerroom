@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import SetDetailsList from '../components/SetDetailsList';
+import SetDetailsContainer from '../components/SetDetailsContainer';
 
 class SetDetailsScreen extends Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class SetDetailsScreen extends Component {
   render() {
     return (
       <View style={styles.viewStyle}>
-        <SetDetailsList />
+        <SetDetailsContainer />
       </View>
     );
   }
