@@ -19,7 +19,7 @@ const RouterComponent = () => {
           key='SetDetails'
           component={ SetDetailsScreen }
           title="SET"
-          leftTitle="Back"
+          leftTitle="<"
           onLeft={() => Actions.root()}
         />
       </Scene>
@@ -37,7 +37,7 @@ const styles = {
   },
   titleStyle: {
     color: "#fff"
-  }
+  },
 }
 
 export default RouterComponent;
