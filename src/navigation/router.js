@@ -19,6 +19,8 @@ const RouterComponent = () => {
           key='SetDetails'
           component={ SetDetailsScreen }
           title="DETAILS"
+          leftTitle="Back"
+          onLeft={() => Actions.main()}
         />
       </Scene>
     </Router>

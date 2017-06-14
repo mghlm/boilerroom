@@ -6,7 +6,8 @@ import { Actions } from 'react-native-router-flux';
 const ArtistName = ( {set} ) => {
 
   return (
-    <TouchableOpacity onPress={ () => Actions.setDetails( {set} ) }>
+    <TouchableOpacity onPress={ () => Actions.setDetails( {setInfo: set} ) }>
+      {console.log(set)}
       <ArtistBox>
         <View>
           <Text style={styles.titleTextStyle}>{set.artist.toUpperCase()}</Text>
