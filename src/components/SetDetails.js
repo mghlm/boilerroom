@@ -7,7 +7,7 @@ const SetDetails = ( {set} ) => {
   return (
     <ArtistBox>
       <View>
-        <Text style={styles.titleTextStyle}>{set.title}</Text>
+        <Text style={styles.titleTextStyle}>{set.artist.toUpperCase()}</Text>
       </View>
     </ArtistBox>
   );
@@ -15,7 +15,8 @@ const SetDetails = ( {set} ) => {
 
 const styles = {
   titleTextStyle: {
-    fontSize: 20
+    fontSize: 30,
+    color: "#FFF"
   }
 }
 
