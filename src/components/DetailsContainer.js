@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View } from 'react-native';
 
 class DetailsContainer extends Component {
   render() {
     return (
-      <View style={[styles.DetailsContainer, this.props.style]}>
+      <View style={styles.DetailsContainer}>
         {this.props.children}
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
+const styles = {
   DetailsContainer: {
     flex: 6,
     flexDirection: "column",
@@ -20,6 +20,6 @@ const styles = StyleSheet.create({
     marginTop: -10,
     marginBottom: 15
   }
-});
+};
 
 export default DetailsContainer;

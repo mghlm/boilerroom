@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Scene, Router, Actions } from 'react-native-router-flux';
 import SetListScreen from '../screens/SetListScreen';
 import SetDetailsScreen from '../screens/SetDetailsScreen';

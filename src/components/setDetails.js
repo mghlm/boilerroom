@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Text, View, Image, TouchableOpacity, Linking } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import LinkBox from './LinkBox';
