@@ -29,6 +29,8 @@ const RouterComponent = () => {
 
 const styles = {
   navStyle: {
+    // backgroundColor: '#000'
+
   },
   backgroundStyle: {
     backgroundColor: '#000'

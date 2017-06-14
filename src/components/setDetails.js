@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, Image, TouchableOpacity, WebView, Linking } from 'react-native';
+import { Text, View, Image, TouchableOpacity, Linking } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import LinkBox from './LinkBox';
 
@@ -11,8 +11,10 @@ const SetDetails = ( {set} ) => {
       <View style={styles.imageViewStyle}>
         <Image source={{ uri: set.image }} style={styles.imageStyle}/>
       </View>
-      <Text style={styles.textStyle}>{set.title}</Text>
-      <Text style={styles.textStyle}>{set.location} | {set.date}</Text>
+      <View style={styles.textViewStyle}>
+        {/* <Text style={styles.textStyle}>{set.title}</Text> */}
+        <Text style={styles.textStyle}>{set.location.toUpperCase()} | {set.date.toUpperCase()}</Text>
+      </View>
       <TouchableOpacity onPress={() => Linking.openURL( set.youtube_url ) }>
         <LinkBox>
           <Text style={styles.textStyle}>Youtube</Text>
@@ -23,6 +25,9 @@ const SetDetails = ( {set} ) => {
           <Text style={styles.textStyle}>Soundcloud</Text>
         </LinkBox>
       </TouchableOpacity>
+      <View style={styles.logoViewStyle}>
+        <Image source={{ uri: set.logo }} style={styles.logoStyle} />
+      </View>
 
     </View>
   );
@@ -31,19 +36,33 @@ const SetDetails = ( {set} ) => {
 
 const styles = {
   imageViewStyle: {
+    marginTop: 20,
     height: 200,
-    width: 150
+    width: 400
   },
-
   imageStyle: {
       opacity: 0.9,
-      height: 60,
-      width: 30,
+      height: 200,
+      width: 600,
       flex: 1,
       width: null
   },
+  logoViewStyle: {
+    marginTop: 4,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  logoStyle: {
+    height: 200,
+    width: 200
+  },
   textStyle: {
+    textAlign: 'center',
     color: '#fff'
+  },
+  textViewStyle: {
+    marginLeft: 6,
+    marginTop: 10,
   }
 }
 // const styles = {
