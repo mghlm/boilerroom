@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, Text } from 'react-native';
-import SetDetails from './SetDetails';
+import ArtistName from './ArtistName';
 import axios from 'axios';
 
 class SetList extends Component {
@@ -13,7 +13,7 @@ class SetList extends Component {
 
   renderSets() {
     return this.state.sets.map(set =>
-      <SetDetails key={set.title} set={set} />
+      <ArtistName key={set.title} set={set} />
     );
   }
 

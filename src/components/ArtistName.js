@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, Image } from 'react-native';
 import ArtistBox from './ArtistBox';
 
-const SetDetails = ( {set} ) => {
+const ArtistName = ( {set} ) => {
 
   return (
     <ArtistBox>
@@ -20,4 +20,4 @@ const styles = {
   }
 }
 
-export default SetDetails;
+export default ArtistName;
