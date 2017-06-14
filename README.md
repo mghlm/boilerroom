@@ -31,6 +31,8 @@ A two-paged iOS application that showcases ten of my favorite Boiler Room sets o
 
 `react-native run-ios`
 
+7 - For running tests, simply run `npm test` in the project directory
+
 ## Approach taken
 
 1. Build a basic NodeJS server that stores static data about my favorite sets in JSON format. Did not use any third party modules for this.
@@ -61,4 +63,4 @@ A two-paged iOS application that showcases ten of my favorite Boiler Room sets o
 * Embed videoplayer
 * Add WebView to avoid opening links in default browser
 * Refactor further to split components up to smaller ones
-* Definitely styling i.e. fonts etc. 
+* Definitely styling i.e. fonts etc.
