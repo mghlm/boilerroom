@@ -3,6 +3,7 @@ import { ScrollView, Text } from 'react-native';
 import ArtistName from './ArtistName';
 import axios from 'axios';
 
+
 class SetList extends Component {
   state = { sets: [] };
 
@@ -13,7 +14,7 @@ class SetList extends Component {
 
   renderSets() {
     return this.state.sets.map(set =>
-      <ArtistName key={set.title} set={set} />
+        <ArtistName key={set.title} set={set} />
     );
   }
 

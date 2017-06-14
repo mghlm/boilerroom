@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { TouchableHighlight, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import SetList from '../components/SetList';
+import SetDetailsList from '../components/SetDetailsList';
 
 class SetDetailsScreen extends Component {
   constructor(props) {
@@ -23,4 +23,4 @@ const styles = {
   }
 }
 
-export default SetListScreen;
+export default SetDetailsScreen;

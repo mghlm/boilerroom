@@ -1,15 +1,19 @@
 import React from 'react';
-import { Text, View, Image } from 'react-native';
+import { Text, View, Image, TouchableOpacity } from 'react-native';
 import ArtistBox from './ArtistBox';
+import { Actions } from 'react-native-router-flux';
 
 const ArtistName = ( {set} ) => {
 
   return (
-    <ArtistBox>
-      <View>
-        <Text style={styles.titleTextStyle}>{set.artist.toUpperCase()}</Text>
-      </View>
-    </ArtistBox>
+    <TouchableOpacity onPress={ () => Actions.setDetails( {set} ) }>
+      <ArtistBox>
+        <View>
+          <Text style={styles.titleTextStyle}>{set.artist.toUpperCase()}</Text>
+        </View>
+      </ArtistBox>
+    </TouchableOpacity>
+
   );
 };
 
