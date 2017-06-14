@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View, Image, TouchableOpacity, WebView, Linking } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import FontAwesome, { Icons } from 'react-native-fontawesome';
+import LinkBox from './LinkBox';
 
 
 const SetDetails = ( {set} ) => {
@@ -13,11 +13,21 @@ const SetDetails = ( {set} ) => {
       </View>
       <Text style={styles.textStyle}>{set.title}</Text>
       <Text style={styles.textStyle}>{set.location} | {set.date}</Text>
-      <FontAwesome>{Icons.chevronLeft}</FontAwesome>
+      <TouchableOpacity onPress={() => Linking.openURL( set.youtube_url ) }>
+        <LinkBox>
+          <Text style={styles.textStyle}>Youtube</Text>
+        </LinkBox>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => Linking.openURL( set.soundcloud_url ) }>
+        <LinkBox>
+          <Text style={styles.textStyle}>Soundcloud</Text>
+        </LinkBox>
+      </TouchableOpacity>
 
     </View>
-  )
+  );
 }
+
 
 const styles = {
   imageViewStyle: {
