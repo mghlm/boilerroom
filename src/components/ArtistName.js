@@ -6,11 +6,11 @@ import { Actions } from 'react-native-router-flux';
 const ArtistName = ( {set} ) => {
 
   return (
-    <TouchableOpacity onPress={ () => Actions.setDetails( {setInfo: set} ) }>
+    <TouchableOpacity onPress={ () => Actions.setDetails( {set: set} ) }>
       <ArtistBox>
         <View>
           <Text style={styles.titleTextStyle}>
-            {set.artist.toUpperCase()} 
+            {set.artist.toUpperCase()}
           </Text>
         </View>
       </ArtistBox>
@@ -22,7 +22,8 @@ const ArtistName = ( {set} ) => {
 const styles = {
   titleTextStyle: {
     fontSize: 30,
-    color: "#FFF"
+    color: "#FFF",
+    fontFamily: 'Helvetica'
   }
 }
 

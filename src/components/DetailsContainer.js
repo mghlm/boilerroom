@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
 
-class UpperContainer extends Component {
+class DetailsContainer extends Component {
   render() {
     return (
-      <View style={[styles.upperContainer, this.props.style]}>
+      <View style={[styles.DetailsContainer, this.props.style]}>
         {this.props.children}
       </View>
     );
@@ -12,8 +12,8 @@ class UpperContainer extends Component {
 }
 
 const styles = StyleSheet.create({
-  upperContainer: {
-    flex: 9,
+  DetailsContainer: {
+    flex: 6,
     flexDirection: "column",
     justifyContent: "flex-start",
     alignItems: "stretch",
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default UpperContainer;
+export default DetailsContainer;
