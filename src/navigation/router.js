@@ -4,7 +4,7 @@ import SetListScreen from '../screens/SetListScreen';
 
 const RouterComponent = () => {
   return (
-    <Router navigationBarStyle={ styles.navStyle }>
+    <Router navigationBarStyle={ styles.navStyle } sceneStyle={styles.backgroundStyle}>
       <Scene key='main' direction='leftToRight' >
         <Scene
           key='sets'
@@ -18,7 +18,9 @@ const RouterComponent = () => {
 
 const styles = {
   navStyle: {
-    backgroundColor: '#fff'
+  },
+  backgroundStyle: {
+    backgroundColor: '#000'
   }
 }
 

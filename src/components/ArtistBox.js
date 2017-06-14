@@ -3,15 +3,17 @@ import { View } from 'react-native';
 
 const ArtistBox = (props) => {
   return (
-    <View style={styles.viewStyle}>
-      {props.children}
-    </View>
+      <View style={styles.viewStyleBox}>
+        {props.children}
+      </View>
   );
 };
 
 const styles = {
-  viewStyle: {
+  viewStyleBox: {
     backgroundColor: "#000",
+    borderWidth: 1,
+    borderColor: '#7d7d7d',
     marginLeft: 5,
     marginRight: 5,
     marginTop: 10,
