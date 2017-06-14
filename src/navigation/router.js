@@ -14,7 +14,7 @@ const RouterComponent = () => {
         />
       </Scene>
 
-      <Scene key='setDetails' direction='leftToRight' >
+      <Scene key='setDetails' direction='rightToLeft' >
         <Scene
           key='SetDetails'
           component={ SetDetailsScreen }

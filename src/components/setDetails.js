@@ -1,18 +1,37 @@
 import React, { Component } from 'react';
 import { Text, View, Image, TouchableOpacity, WebView, Linking } from 'react-native';
 import { Actions } from 'react-native-router-flux';
+import FontAwesome, { Icons } from 'react-native-fontawesome';
 
 
 const SetDetails = ( {set} ) => {
   return (
     <View>
+
+      <View style={styles.imageViewStyle}>
+        <Image source={{ uri: set.image }} style={styles.imageStyle}/>
+      </View>
       <Text style={styles.textStyle}>{set.title}</Text>
-      {console.log(set.title)}
+      <Text style={styles.textStyle}>{set.location} | {set.date}</Text>
+      <FontAwesome>{Icons.chevronLeft}</FontAwesome>
+
     </View>
   )
 }
 
 const styles = {
+  imageViewStyle: {
+    height: 200,
+    width: 150
+  },
+
+  imageStyle: {
+      opacity: 0.9,
+      height: 60,
+      width: 30,
+      flex: 1,
+      width: null
+  },
   textStyle: {
     color: '#fff'
   }
