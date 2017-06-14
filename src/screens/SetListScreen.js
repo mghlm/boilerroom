@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TouchableHighlight, Text } from 'react-native';
+import { TouchableHighlight, Text, View } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import SetList from '../components/SetList';
 
