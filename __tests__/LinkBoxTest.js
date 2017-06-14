@@ -5,8 +5,6 @@ import LinkBox from '../src/components/LinkBox';
 import renderer from 'react-test-renderer';
 
 test('renders correctly', () => {
-  const tree = renderer.create(
-  <LinkBox />
-).toJSON();
+  const tree = renderer.create(<LinkBox />).toJSON();
 expect(tree).toMatchSnapshot();
 });
