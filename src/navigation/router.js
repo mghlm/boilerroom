@@ -9,7 +9,7 @@ const RouterComponent = () => {
         <Scene
           key='sets'
           component={ SetListScreen }
-          title="SETS" initial
+          title="ARTISTS" initial
         />
       </Scene>
     </Router>

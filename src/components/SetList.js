@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView, View, Text } from 'react-native';
+import { ScrollView, Text } from 'react-native';
 import SetDetails from './SetDetails';
 import axios from 'axios';
 
@@ -19,9 +19,9 @@ class SetList extends Component {
 
   render() {
     return (
-      <View>
+      <ScrollView>
         {this.renderSets()}
-      </View>
+      </ScrollView>
     );
   }
 };

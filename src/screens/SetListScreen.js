@@ -10,10 +10,16 @@ class SetListScreen extends Component {
 
   render() {
     return (
-      <View>
+      <View style={styles.viewStyle}>
         <SetList />
       </View>
     );
+  }
+}
+
+const styles = {
+  viewStyle: {
+    marginTop: 60
   }
 }
 
