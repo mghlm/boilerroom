@@ -5,8 +5,8 @@ import SetDetailsScreen from '../screens/SetDetailsScreen';
 
 const RouterComponent = () => {
   return (
-    <Router navigationBarStyle={ styles.navStyle } sceneStyle={styles.backgroundStyle}>
-      <Scene key='main' direction='leftToRight' >
+    <Router navigationBarStyle={ styles.navStyle } titleStyle={styles.titleStyle} sceneStyle={styles.backgroundStyle}>
+      <Scene key='root' direction="leftToRight">
         <Scene
           key='sets'
           component={ SetListScreen }
@@ -14,13 +14,13 @@ const RouterComponent = () => {
         />
       </Scene>
 
-      <Scene key='setDetails' direction='rightToLeft' >
+      <Scene key='setDetails' direction="rightToLeft">
         <Scene
           key='SetDetails'
           component={ SetDetailsScreen }
-          title="DETAILS"
+          title="SET"
           leftTitle="Back"
-          onLeft={() => Actions.main()}
+          onLeft={() => Actions.root()}
         />
       </Scene>
     </Router>
@@ -29,11 +29,14 @@ const RouterComponent = () => {
 
 const styles = {
   navStyle: {
-    // backgroundColor: '#000'
+    backgroundColor: '#000'
 
   },
   backgroundStyle: {
     backgroundColor: '#000'
+  },
+  titleStyle: {
+    color: "#fff"
   }
 }
 
