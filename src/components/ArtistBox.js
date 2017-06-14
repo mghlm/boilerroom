@@ -10,10 +10,9 @@ const ArtistBox = (props) => {
 };
 
 const styles = {
-  viewsStyle: {
-    borderWidth: 1,
-    borderRadius: 1,
-    borderColor: '#000000',
+  viewStyle: {
+    borderWidth: 3,
+    borderColor: '#000',
     marginLeft: 5,
     marginRight: 5,
     marginTop: 10
