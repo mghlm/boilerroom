@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Text } from 'react-native';
+import ArtistBox from './ArtistBox';
 import axios from 'axios';
 
 class SetList extends Component {
@@ -19,7 +20,7 @@ class SetList extends Component {
   render() {
     return (
       <View>
-        {this.renderSets()}
+        <ArtistBox />
       </View>
     );
   }

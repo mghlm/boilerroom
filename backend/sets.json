@@ -60,6 +60,26 @@
   "image": "http://img.youtube.com/vi/4qljzHND1OY/sddefault.jpg"
   },
   {
+  "title": "Max Cooper Boiler Room Berlin DJ Set",
+  "artist": "Max Cooper",
+  "location": "Berlin",
+  "date": "April 14, 2014",
+  "boiler_room_url": "https://boilerroom.tv/recording/max-cooper/",
+  "soundcloud_url": "https://soundcloud.com/platform/max-cooper",
+  "youtube_url": "https://www.youtube.com/watch?v=KHQDGohpBsQ",
+  "image": "http://img.youtube.com/vi/KHQDGohpBsQ/sddefault.jpg"
+  },
+  {
+  "title": "Oliver Koletzki Boiler Room Berlin DJ Set",
+  "artist": "Oliver Koletzki",
+  "location": "Berlin",
+  "date": "March 17, 2017",
+  "boiler_room_url": "https://boilerroom.tv/recording/oliver-koletzki/",
+  "soundcloud_url": "https://soundcloud.com/platform/oliver-koletzki",
+  "youtube_url": "https://www.youtube.com/watch?v=Uec7Hmvb5YE",
+  "image": "http://img.youtube.com/vi/Uec7Hmvb5YE/sddefault.jpg"
+  },
+  {
   "title": "Acid Pauli Boiler Room Tulum DJ Set",
   "artist": "Acid Pauli",
   "location": "Tulum",
@@ -78,25 +98,5 @@
   "soundcloud_url": "https://soundcloud.com/platform/solomun",
   "youtube_url": "https://www.youtube.com/watch?v=bk6Xst6euQk",
   "image": "http://img.youtube.com/vi/bk6Xst6euQk/sddefault.jpg"
-  },
-  {
-  "title": "Max Cooper Boiler Room Berlin DJ Set",
-  "artist": "Max Cooper",
-  "location": "Berlin",
-  "date": "April 14, 2014",
-  "boiler_room_url": "https://boilerroom.tv/recording/max-cooper/",
-  "soundcloud_url": "https://soundcloud.com/platform/max-cooper",
-  "youtube_url": "https://www.youtube.com/watch?v=KHQDGohpBsQ",
-  "image": "http://img.youtube.com/vi/KHQDGohpBsQ/sddefault.jpg"
-  },
-  {
-  "title": "Techno: Oliver Koletzki Boiler Room Berlin DJ Set",
-  "artist": "Oliver Koletzki",
-  "location": "Berlin",
-  "date": "March 17, 2017",
-  "boiler_room_url": "https://boilerroom.tv/recording/oliver-koletzki/",
-  "soundcloud_url": "https://soundcloud.com/platform/oliver-koletzki",
-  "youtube_url": "https://www.youtube.com/watch?v=Uec7Hmvb5YE",
-  "image": "http://img.youtube.com/vi/Uec7Hmvb5YE/sddefault.jpg"
   },
 ]
