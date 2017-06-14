@@ -10,3 +10,8 @@ test('renders correctly', () => {
 ).toJSON();
 expect(tree).toMatchSnapshot();
 });
+
+// test('renders View component', () => {
+//   const wrapper = shallow(<ArtistBox />);
+//   expect(wrapper.find(View).length).toBe(1);
+// });

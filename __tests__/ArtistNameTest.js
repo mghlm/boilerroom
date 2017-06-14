@@ -6,9 +6,11 @@ import ArtistName from '../src/components/ArtistName';
 
 import renderer from 'react-test-renderer';
 
+
+const testSet = {"artist": "test"};
+
 test('renders correctly', () => {
-  const tree = renderer.create(
-  <ArtistName />
-).toJSON();
+  const tree = renderer.create(<ArtistName set={testSet}/>).toJSON();
+
 expect(tree).toMatchSnapshot();
 });
