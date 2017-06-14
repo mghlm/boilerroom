@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 
-const ArtistBox = () => {
+const ArtistBox = (props) => {
   return (
     <View style={styles.viewStyle}>
-      <Text>Hi</Text>
+      {props.children}
     </View>
   );
 };
